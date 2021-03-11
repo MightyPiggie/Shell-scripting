@@ -1,0 +1,13 @@
+#Hier maak ik de directory Afbeeldingen aan
+mkdir Afbeeldingen
+
+#Hier ga ik 2x door een for loop heen die alle bestanden met een .png of .jpg extentie verplaatst naar de folder Afbeeldingen
+for i in  $1/**.png
+do
+	mv $i Afbeeldingen
+done
+for i in $1/**.jpg
+do
+	mv $i Afbeeldingen
+done
+

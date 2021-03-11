@@ -1,0 +1,6 @@
+#Hier maak ik de directory Afbeeldingen aan
+mkdir Afbeeldingen
+
+#Hier zoek ik eerst alle bestanden met een .jpg of .png extentie en als die die gevonden heeft voert hij de command mv met de locatie van die bestand en verplaatst die naar de folder Afbeeldingen
+find $1 -name '*.jpg' -exec mv {} Afbeeldingen/ \;
+find $1 -name '*.png' -exec mv {} Afbeeldingen/ \;
